@@ -4,10 +4,10 @@ export default function TopBar() {
   return (
     <div className="topbar">
       <div className="topbarLeft">
-        <i class="topbarIcon fa-brands fa-facebook-square"></i>
-        <i class="topbarIcon fa-brands fa-twitter-square"></i>
-        <i class="topbarIcon fa-brands fa-instagram-square"></i>
-        <i class="topbarIcon fa-brands fa-linkedin"></i>
+        <i className="topbarIcon fa-brands fa-facebook-square"></i>
+        <i className="topbarIcon fa-brands fa-twitter-square"></i>
+        <i className="topbarIcon fa-brands fa-instagram-square"></i>
+        <i className="topbarIcon fa-brands fa-linkedin"></i>
       </div>
 
       <div className="topbarCenter">
