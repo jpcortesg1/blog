@@ -1,0 +1,55 @@
+.topbar{
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.topbarLeft, .topbarRight{
+  flex: 2.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbarCenter{
+  flex: 5;
+}
+
+.topbarIcon{
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
+
+.topbarIconSearch{
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.topbarList{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.topbarListItem{
+  margin-right: 20px;
+  font-style: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.topbarRightImage{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
