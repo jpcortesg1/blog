@@ -6,6 +6,8 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Settings from "./pages/settings/Settings";
 import Single from "./pages/single/Single";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   const user = false;
@@ -18,6 +20,8 @@ function App() {
           {/* Always */}
           <Route path="/" element={<Home />} />
           <Route path="/post/:postId" element={<Single />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           {/* Only for users */}
           <Route
             path="/write"
