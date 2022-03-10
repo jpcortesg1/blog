@@ -2,6 +2,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
+const path = require("path");
 
 // Routes
 const authRoute = require("./routes/auth");
@@ -17,6 +18,7 @@ const app = express();
 dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use("/images", express.static(path.join(__dirname, "/images")));
 
 // Connect with db
 mongoose

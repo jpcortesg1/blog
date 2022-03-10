@@ -1,6 +1,7 @@
 // Required modules
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+const Post = require("./Post");
 
 // Schema base
 const UserSchema = new mongoose.Schema(
@@ -54,6 +55,12 @@ UserSchema.statics.equalId = function (user) {
 
 // Update user
 UserSchema.statics.updateUser = async function (user) {
+  const lastUser = await this.findUser(null, user.userId);
+  const posts = await Post.findPost(null, { username: lastUser.username });
+  posts.map(async (p) => {
+    p.username = user.username;
+    await Post.updatePost(p);
+  });
   return await this.findByIdAndUpdate(
     user.userId,
     { $set: user },
