@@ -2,9 +2,15 @@ import "./post.css";
 import { Link } from "react-router-dom";
 
 function Post({ post }) {
+  const PF = process.env.REACT_APP_PF;
+
   return (
     <div className="post">
-      {post.photo && <img src={post.photo} alt="" className="postImg" />}
+      {post.photo && (
+        <Link to={`/post/${post._id}`} className="link">
+          <img src={PF + post.photo} alt="" className="postImg" />
+        </Link>
+      )}
       <div className="postInfo">
         <div className="postCats">
           {post.categories.map((c) => (

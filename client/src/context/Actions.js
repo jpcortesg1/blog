@@ -10,3 +10,12 @@ export const LoginSuccess = (user) => ({
 export const LoginFailure = () => ({
   type: "LOGIN_FAILURE",
 });
+
+export const Logout = () => ({
+  type: "LOGOUT",
+});
+
+export const UpdateUser = (newUser) => ({
+  type: "UPDATE_USER",
+  payload: newUser,
+});

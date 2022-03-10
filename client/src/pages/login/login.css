@@ -59,3 +59,16 @@
   color: white;
   border-radius: 10px;
 }
+
+.loginButton:disabled, .loginRegisterButton:disabled{
+  cursor: not-allowed;
+  background: gray;
+}
+
+.loginError{
+  background: rgba(248, 180, 180, 0.671);
+  padding: 10px 20px;
+  color: red;
+  margin-top: 1rem;
+  border-radius: 5px;
+}

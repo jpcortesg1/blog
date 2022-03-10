@@ -8,9 +8,11 @@ import Settings from "./pages/settings/Settings";
 import Single from "./pages/single/Single";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 
 function App() {
-  const user = false;
+  const { user } = useContext(Context);
 
   return (
     <div className="App">

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Redirect } from "react-router-dom";
 import axios from "axios";
 import "./register.css";
 
@@ -8,7 +7,6 @@ export default function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,7 +19,7 @@ export default function Register() {
 
       res.data && window.location.replace("/login");
     } catch (error) {
-      setError(true);
+      console.log(error)
     }
   };
 

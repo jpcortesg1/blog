@@ -49,6 +49,9 @@
 }
 
 .singlePostDescription{
+  text-align: justify;
+  padding: 20px;
+  margin-left: 40px;;
   color: #666;
   font-size: 18px;
   line-height: 25px;
@@ -58,4 +61,36 @@
   margin-left: 20px;
   font-size: 30px;
   font-weight: 600px;
+}
+
+input.singlePostTitle{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+textarea.singlePostDescription{
+  border: none;
+  outline: none;
+  border-left: 2px solid black;
+  min-height: 60vh;
+  min-width: 90%;
+}
+
+.singlePostButton{
+  width: 100px;
+  border: none;
+  outline: none;
+  background: teal;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  font-size: 17px;
+  margin-top: 20px;
 }
