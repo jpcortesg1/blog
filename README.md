@@ -74,9 +74,6 @@ This part is important, you can delete or update your profile, the backend does 
    * In packege.json set proxy to port api
    * $ npm run start
 
-
-<h3 align="center">What to do.</h3>
-
 <h3 align="center">Credits.</h3>
 
 This project is learning thanks to lamadev, a youtuber who shares his knowledge.
