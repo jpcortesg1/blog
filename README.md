@@ -43,11 +43,21 @@ You can see an individual post where all the information, author, date, title an
 <img src="https://user-images.githubusercontent.com/60229777/157589812-01cc2f33-64bf-487b-a3c3-4cce36ad20be.png" alt="Register Blog">
 </p>
 
+## * You can create a post.
 
-* Create publications, react to publications, list publications.
-* Look at the profile with all info of a user.
-* The application has a real-time chat with socket.io with which people can communicate with each other.
-Context was used for user management, with good practices. Hooks such as useState, useEffect, useRef, etc. are also used.
+You can write a post.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/60229777/157589989-617e5fff-9dc3-4bd1-a12f-2dd8e2671c01.png" alt="Register Blog">
+</p>
+
+## * You can update you account.
+
+This part is important, you can delete or update your profile, the backend does something else, change all posts the username so as not to lose recognition when editing. When the account is deleted, all posts for this person are deleted.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/60229777/157590089-20a770aa-918e-435a-bbfd-be896912b981.png" alt="Register Blog">
+</p>
 
 
 <h3 align="center">Install</h3>
@@ -58,21 +68,14 @@ Context was used for user management, with good practices. Hooks such as useStat
    * create .env file and add url to mongo.
    * $ npm install
    * $ npm run start
-3. Into folder socket run:
-   * add port of react in socket
-   * $ npm install
-   * $ npm run start
-4. Into folder client run:
+3. Into folder client run:
+   * Edit .env with host to server.
    * $ npm install
    * In packege.json set proxy to port api
    * $ npm run start
 
 
 <h3 align="center">What to do.</h3>
-
-<p align="center">
-In the application you can create an account, start on it, create new posts, react to your posts or other posts. Look at other people's profiles, follow and stop following user and chat with the people you follow.
-</p>
 
 <h3 align="center">Credits.</h3>
 
@@ -88,7 +91,7 @@ I want to show my skills as a junior programmer by showing this project. In it y
 <h3 align="center">New knowledge.</h3>
 
 <p align="center">
-In this project I put into practice concepts that I already knew, I also learned to use React Context.
+In this project more dynamic validations are made in the part of the API, there are also better methods, and there are better practices.
 </p>
 
 <h2 align="center">
