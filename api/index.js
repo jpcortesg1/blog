@@ -37,7 +37,7 @@ app.use("/api/post", postRoute);
 app.use("/api/category", catRoute);
 app.use("/api/upload", uploadRoute);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 // Run server
 app.listen(port, () => {
