@@ -37,7 +37,9 @@ app.use("/api/post", postRoute);
 app.use("/api/category", catRoute);
 app.use("/api/upload", uploadRoute);
 
+const port = process.env.PORT || 3000;
+
 // Run server
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log("Backend is running");
 });
