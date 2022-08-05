@@ -17,7 +17,7 @@ export default function Login() {
     dispatch({ type: "LOGIN_START" });
     setError(false);
     try {
-      const res = await axios.post("/auth/login", {
+      const res = await axios.post("/api/auth/login", {
         username: userRef.current.value,
         password: passRef.current.value,
       });
@@ -48,7 +48,9 @@ export default function Login() {
         <button type="submit" className="loginButton" disabled={isFetching}>
           Login
         </button>
-        {error && <span className="loginError">There is a problem logging in</span>}
+        {error && (
+          <span className="loginError">There is a problem logging in</span>
+        )}
       </form>
       <button className="loginRegisterButton" disabled={isFetching}>
         <Link className="link" to="/register">

@@ -27,13 +27,13 @@ export default function Settings() {
         data.append("file", file);
         newUser.profilePic = filename;
         try {
-          await axios.post("/upload", data);
+          await axios.post("/api/upload", data);
         } catch (error) {
           console.error(error);
         }
       }
       if (password !== "") newUser.password = password;
-      const res = await axios.put(`/user/${user._id}`, newUser);
+      const res = await axios.put(`/api/user/${user._id}`, newUser);
       const { data } = res;
       dispatch({ type: "UPDATE_USER", payload: data });
     } catch (error) {

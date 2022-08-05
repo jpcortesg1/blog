@@ -25,7 +25,7 @@ function SinglePost() {
   // Get info of page
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get(`/post/${path}`);
+      const res = await axios.get(`/api/post/${path}`);
       const { data } = res;
       setPost(data);
       const { title, description } = data;
@@ -38,7 +38,7 @@ function SinglePost() {
   // Delete post
   const handleDelete = async () => {
     try {
-      await axios.delete(`/post/${path}`, {
+      await axios.delete(`/api/post/${path}`, {
         data: {
           username: user.username,
         },
@@ -51,7 +51,7 @@ function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`/post/${path}`, {
+      await axios.put(`/api/post/${path}`, {
         username: user.username,
         title,
         description,
